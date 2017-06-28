@@ -1,0 +1,66 @@
+{
+  "name": "gp-boilerplate-webserver",
+  "version": "4.0.0",
+  "description": "Grabarz & Partner - Frontend Server",
+  "main": "assemblefile.js",
+  "scripts": {
+    "start": "node node_modules/assemble/bin/assemble server --serverConfig=./env/config/local.json --env=production --server=.",
+    "dev": "node node_modules/assemble/bin/assemble server --serverConfig=./env/config/local.json --env=development --server=.",
+    "test": "node node_modules/assemble/bin/assemble server --serverConfig=./env/config/local.json --env=development --server=. --timeout=30000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GrabarzUndPartner/gp-boilerplate-webserver.git"
+  },
+  "license": "GNU GPLv3",
+  "author": "Grabarz & Partner Werbeagentur GmbH",
+  "contributors": [{
+    "name": "Stephan Gerbeth",
+    "email": "stephan.gerbeth@grabarzundpartner.de"
+  }, {
+    "name": "Thorn Walli",
+    "email": "thorn.walli@grabarzundpartner.de"
+  }, {
+    "name": "Boris Horn",
+    "email": "boris.horn@grabarzundpartner.de"
+  }, {
+    "name": "Jan Szidat",
+    "email": "jan.szidat@grabarzundpartner.de"
+  }, {
+    "name": "Fabian Werner",
+    "email": "fabian.werner@grabarzundpartner.de"
+  }],
+  "bugs": {
+    "url": "https://github.com/GrabarzUndPartner/gp-boilerplate-webserver/issues"
+  },
+  "homepage": "https://github.com/GrabarzUndPartner/gp-boilerplate-webserver#readme",
+  "dependencies": {
+    "@danielbayerlein/hapi-webpack-middleware": "1.0.1",
+    "aguid": "2.0.0",
+    "dynamic.io": "0.0.3",
+    "fb": "1.1.1",
+    "goo.gl": "0.1.4",
+    "gulp-nodemon": "2.2.1",
+    "gulp-weinre": "0.0.4",
+    "h2o2": "5.4.0",
+    "hapi": "16.1.0",
+    "hapi-auth-jwt2": "7.2.4",
+    "hapi-webpack-dev-middleware": "^2.0.0",
+    "inert": "4.1.0",
+    "jsonwebtoken": "7.3.0",
+    "lodash": "4.17.4",
+    "minimist": "1.2.0",
+    "mixin-object": "2.0.1",
+    "request": "2.79.0",
+    "socket.io": "1.7.3",
+    "socket.io-events": "0.4.6",
+    "socketio-jwt": "4.5.0",
+    "url-parse": "1.1.8",
+    "webpack": "2.2.1",
+    "webpack-dev-server": "2.4.1",
+    "webpack-dev-middleware": "1.10.1",
+    "webpack-hot-middleware": "2.17.1",
+    "xmldom": "0.1.27",
+    "xpath": "0.0.23"
+  }
+}
